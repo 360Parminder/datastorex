@@ -1,0 +1,38 @@
+
+body {
+  
+}
+.container{
+    width: 400px;
+    height: 600px;
+    background: url(img/wallhaven-dggz63_400x600.png);    
+    backdrop-filter: blur(10px);
+}
+.cp{
+    margin-left: 24vw;
+    width: 180px;
+    height: auto;
+
+}
+p{
+    font-size: 30px;
+    color: #fff;
+    margin-left: 32vw;
+    margin-top: 0;
+    
+}
+button {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    backdrop-filter:blur(10px);
+    background-color: #00000069;
+    color: #fff;
+    margin-top: 15vh;
+    margin-left: 20vw;
+    padding: 10px;
+}
+

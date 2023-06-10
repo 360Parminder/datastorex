@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="file.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="img/wallhaven-q26qgd.jpg" type="image/x-icon">
+    <link href="https://api.fontshare.com/v2/css?f[]=chillax@1,600,700&display=swap" rel="stylesheet">
+    <title>file</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+            <div class="logo"><img src="DataStoreX-logo/default.png " alt=""></div>
+            <ul>
+                <a class="c" href="index.html">Home</a>
+                <a class="c" href="contact.html">Contact</a>
+                <button class="down" onclick="down()"><img id="profile" src="" alt="" srcset=""></button>
+            </ul>
+            <div id="drop_down" class="down-slide">
+                <img id="usr" src="" alt="" srcset="">
+                <p class="c" id="usernames"></p>
+                <button class="b1" onclick="forget()">Forget Password</button>
+                <button class="b2" onclick="logout()">logout</button>
+            </div>
+
+
+        </header>
+        <main>
+            <div class="left box">
+                <h2>upload</h2>
+                <input class="file" type="file" id="fileInput">
+                <button id="click" class="primary-btn" onclick="upload()">upload</button>
+                <label for=""><ion-icon class="folder" name="cloud-upload-outline"></ion-icon></ion-icon></label>
+                <p id="error" style="color:brown;"></p>
+            </div>
+            <div class="right box">
+                <h2>uploaded</h2>
+                <div class="uploaded">
+
+                    <ul id="fileList"></ul>
+                    <li id="li"></li>
+                    <a id="a" href=""></a>
+                </div>
+
+                <button class="primary-btn" onclick="myfile()">Show uploaded</button>
+            </div>
+
+        </main>
+        <footer>
+            <div class="bottom">
+                <div class="socials flex">
+                    <a class="github social" href="https://github.com/STORM992002"><ion-icon
+                            name="logo-github"></ion-icon></a>
+                    <a class="instagram social"
+                        href="https://instagram.com/_broken__storm_?igshid=YmMyMTA2M2Y="><ion-icon
+                            name="logo-instagram"></ion-icon></a>
+                    <a class="linkedin social" href="https://www.linkedin.com/in/parminder-singh-storm/"><ion-icon
+                            name="logo-linkedin"></ion-icon></a>
+                    <a class="discord social" href=""><ion-icon name="logo-discord"></ion-icon></a>
+                </div>
+            </div>
+    </div>
+    </footer>
+
+
+
+
+
+    <!-- <img id="donefile" src="" alt=""> -->
+
+
+
+    <!-- <button id="share-button">share</button> -->
+
+    </div>
+
+    <!-- for icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- for firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+
+    <script src="firebase.js"></script>
+    <script src="file.js"></script>
+</body>
+
+</html>

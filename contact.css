@@ -1,0 +1,153 @@
+
+body {
+    font-family: 'Cambo', serif;
+    background: url(img/wallhaven-6kel8l.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+header {
+    margin-left: 14vw;
+    width: 70vw;
+    height: 10vh;
+    background-color: #00000054;
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+header a {
+    color: #16b4f0;
+    font-size: 22px;
+    margin-right: 2.5vw;
+}
+
+header a:hover {
+    color: #d50eb0;
+    transform: translateY(-.1vw);
+}
+
+
+.main-box {
+    background-color: #00000054;
+    backdrop-filter: blur(6px);
+    width: 70vw;
+    height: 70vh;
+    margin-top: 10vh;
+    margin-left: 14vw;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #000000;
+
+}
+
+.box-left {
+    color: #fff;
+    width: 30vw;
+    margin: 4vh 2vw 4vh 6vw;
+    align-items: center;
+}
+
+.box-left h2 {
+    color: #d50eb0;
+    font-size: 35px;
+    margin-top: 4vh;
+}
+
+.box-left p {
+    margin: 2vh 0 0 0;
+    color: #16b4f0;
+}
+
+.inputs {
+    display: inline-block;
+    border: none;
+}
+
+.input {
+    border: none;
+    border-radius: 8px;
+    background-color: #00000052;
+    color: #adb5bd;
+    display: block;
+    margin: 2.5vh 0 0 0;
+    width: 25vw;
+    height: 6vh;
+    font-family: 'Cambo', serif;
+    padding-left: 1vw;
+
+}
+
+.comment {
+    margin-bottom: 4vh;
+    height: 15vh;
+    resize: none;
+    padding-top: 1vh;
+
+}
+
+
+.left-btn {
+    margin-left: 1vw;
+    align-items: center;
+    background-color: #1751ef;
+    font-size: 25px;
+    padding: 1vh 5vw 1vh 5vw;
+    border-radius: 6px;
+    transition-delay: 1sec;
+    border: none;
+    color: #fff;
+}
+
+.left-btn:hover {
+    transform: translateY(-1px);
+}
+
+
+
+.box-right img {
+    display: block;
+    width: 20vw;
+    margin: 0 0 0 6vw;
+}
+
+.contact {
+    margin-top: 23vh;
+}
+
+.contact ion-icon {
+    color: #d50eb0;
+    display: block;
+    font-size: 20px;
+    border: #16b4f0 solid;
+    border-radius: 18px;
+    padding: 5px;
+    margin: 4px;
+}
+
+.box-right a {
+    margin-top: 0vh;
+    color: #16b4f0;
+}
+
+.social {
+    margin-top: 50vh;
+    margin-bottom: 10vh;
+    display: inline-block;
+    background-color: #00000055;
+    backdrop-filter: blur(6px);
+    border-radius: 0px 8px 35px 0px;
+}
+
+.social ion-icon {
+    display: block;
+    margin: 2vh;
+    font-size: 35px;
+    transition-duration: 1s;
+}
+
+.social ion-icon:hover {
+    transform: translateY(-7px);
+}

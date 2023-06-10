@@ -1,0 +1,120 @@
+:root{
+    --pricolor:#16b4f0;
+    --seccolor:#ea4c88;
+    --inputcolor:#fefae0;
+}
+
+body {
+    background-image: url(img/wallhaven-8oow9o.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.dia {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    clip-path: polygon(0px 0px, 72.00% 0px, 100% 100.00%, 0% 100%);
+    backdrop-filter: blur(6px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.container {
+    height: 100%;
+    width: 74%;
+    position: absolute;
+    color:var(--inputcolor);
+}
+
+.header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+
+.header a {
+    color: var(--maincolor);
+    font-size: 22px;
+    margin-right: 2.5vw;
+}
+
+.header a:hover {
+    color: var(--seccolor);
+    transform: translateY(-.1vw);
+}
+
+.start {
+    font-size: 20px;
+    position: absolute;
+    top: 30vh;
+    left: 5.5vw;
+    color: var(--pricolor);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container h2 {
+    position: absolute;
+    font-size: 50px;
+    top: 33vh;
+    left: 5vw;
+    color: var(--pricolor);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container h2 span {
+    color: #000;
+    font-size: 50px;
+}
+
+.div p {
+    position: absolute;
+    font-size: 25px;
+    top: 43vh;
+    left: 5vw;
+    text-transform: capitalize;
+    color: var(--pricolor);
+}
+
+.div a {
+    position: absolute;
+    font-size: 25px;
+    top: 43vh;
+    left: 21.3vw;
+    color: var(--inputcolor);
+}
+
+.container form {
+    position: absolute;
+    width: 25vw;
+    top: 50vh;
+    left: 5vw;
+}
+
+form input {
+
+    background-color: #595b638d;
+    border: none;
+    border-radius: 8px;
+    margin-top: 3vh;
+    width: 23vw;
+    height: 6vh;
+    font-size: 18px;
+    color: var(--inputcolor);
+    padding-left: 12px;
+}
+form button{
+    font-size: 18px;
+    position: relative;
+    margin-top: 3vh;
+    left: 1vw;
+    width: 10vw;
+    height: 6vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--pricolor);
+    border: none;
+    border-radius: 8px;
+}
