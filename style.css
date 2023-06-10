@@ -246,7 +246,8 @@ main {
 
 }
 
-.lower button {
+.lower a{
+    display: flex;
     height: 4vh;
     width: 5vw;
     background-color: rgba(0, 0, 0, 0.3);
@@ -258,7 +259,8 @@ main {
     margin-top: 5px;
     bottom: 8vh;
     left: 57.2vw;
-
+    align-items: center;
+    padding-left: 12px;
 }
 
 .lower button:hover {
