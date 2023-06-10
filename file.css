@@ -210,7 +210,12 @@ main {
     height: 50vh;
     background-color: #949cb0;
 }
-
+#fileList{
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    flex-direction: column;
+}
 .right button {
     position: absolute;
     top: 62.5vh;
