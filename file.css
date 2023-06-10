@@ -199,6 +199,8 @@ main {
 }
 
 .uploaded {
+    overflow:scroll;
+    dispaly:flex;
     position: absolute;
     top: 9vh;
     left: 5vw;
