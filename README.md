@@ -34,7 +34,7 @@
     <img src="img/cover.png" alt="Logo" width="350" height="150">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">DataStoreX</h3>
 
   <p align="center">
     project_description
