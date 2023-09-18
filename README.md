@@ -30,7 +30,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="img/cover.png">
+  <a href="https://github.com/STORM992002/datastorex/blob/master/img/cover.png">
     <img src="images/logo.png" alt="Logo" width="350" height="150">
   </a>
 
