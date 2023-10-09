@@ -32,27 +32,26 @@
 
         </header>
         <main>
-            <div class="left box">
-                <h2>upload</h2>
+            <div class="left topbox">
                 <input class="file" type="file" id="fileInput">
                 <button id="click" class="primary-btn" onclick="upload()">upload</button>
-                <label for=""><ion-icon class="folder" name="cloud-upload-outline"></ion-icon></ion-icon></label>
+                <label for="">Upload manually</label>
                 <p id="error" style="color:brown;"></p>
             </div>
-            <div class="right box">
-                <h2>uploaded</h2>
+            <div class="right">
+                <div class="heading"><h2>Uploaded files</h2><p id="filecount" class="filecount"></p></div>
+                
                 <div class="uploaded">
 
                     <ul id="fileList"></ul>
-                    <li id="li"></li>
-                    <a id="a" href=""></a>
+                    <!-- <a class="download" href=""></a> -->
                 </div>
 
-                <button class="primary-btn" onclick="myfile()">Show uploaded</button>
+                <button class="show" onclick="myfile()">Show uploaded</button>
             </div>
 
         </main>
-        <footer>
+        <!-- <footer>
             <div class="bottom">
                 <div class="socials flex">
                     <a class="github social" href="https://github.com/STORM992002"><ion-icon
@@ -66,7 +65,7 @@
                 </div>
             </div>
     </div>
-    </footer>
+    </footer> -->
 
 
 
