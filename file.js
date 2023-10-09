@@ -29,7 +29,12 @@ function logout() {
 
 
 // to upload files to storage
+var file;
 
+if(file=null){
+  var click = document.getElementById("click");
+  click.style.display="none";
+}
 function upload() {
 
   
@@ -37,7 +42,7 @@ function upload() {
   var fileInput = document.getElementById("fileInput");
 
   // Get the file
-  var file = fileInput.files[0];
+  file = fileInput.files[0];
   // if user is not select any file
  
 
@@ -63,9 +68,12 @@ function upload() {
         console.log('File uploaded successfully');
         // Perform further actions if needed
       })
+      
       .catch(function (error) {
         console.error('Error uploading file:', error);
       });
+      file.clear();
+
   } else {
     // User is not signed in, handle accordingly
     console.log('User is not signed in');
@@ -75,7 +83,7 @@ function upload() {
 // to download the client files
 
 function myfile() {
-
+ 
   // Get the currently signed-in user
   var user = firebase.auth().currentUser;
 
@@ -89,17 +97,44 @@ function myfile() {
     // List all files under the user's UID
     storageRef.listAll()
       .then(function (result) {
+        //to count the no of files
+        var filecount=document.getElementById("filecount");
+        var filelength = result.items.length;
+        filecount.textContent=filelength;
+
         result.items.forEach(function (fileRef) {
           // Access the download URL for each file
-          var listItem = document.createElement("li"); // Create a new <li> element
-          var link = document.createElement("a"); // Create a new <a> element for the download link
+         var listItem = document.createElement("li"); // Create a new <li> element
+          var link = document.createElement("p"); // Create a new <a> element for the download link
+          var download = document.createElement("a");// to download the file
+          var copy =document.createElement("button");
+          var emptydiv=document.createElement("div");
+          listItem.className="list";
+          download.className="download";
+          download.textContent="Download";
+          copy.className="copy";
+          copy.textContent="Copy ";
+          emptydiv.className="emptydiv";
+             
           fileRef.getDownloadURL().then(function (downloadURL) {
-            link.href = downloadURL; // Set the download URL
+            download.href = downloadURL; // Set the download URL
             link.textContent = fileRef.name; // Set the file name as the text content of the link
-            link.download = fileRef.name; // Set the file name as the download attribute
-            listItem.appendChild(link); // Append the link to the <li> element
+             // Add an onclick event listener to the copy button
+            emptydiv.appendChild(download);
+            emptydiv.appendChild(copy);
+            listItem.appendChild(link);// Append the link to the <li> element
+            listItem.appendChild(emptydiv);
+            // listItem.appendChild(download); 
+            // listItem.appendChild(copy);
             fileList.appendChild(listItem); // Append the <li> element to the <ul> element
+            copy.addEventListener('click', function () {
+
+              navigator.clipboard.writeText(downloadURL);
+              alert('Link copied!');
+             });
+            
           })
+          
             .catch(function (error) {
               console.error('Error getting download URL:', error);
             });
@@ -146,10 +181,12 @@ if (user) {
       // Handle success, such as displaying a notification to the user
     })
     .catch(function(error) {
+      alert('Error sending password reset email:', error)
       console.error('Error sending password reset email:', error);
       // Handle error, such as displaying an error message to the user
     });
 } else {
+  alert('User is not signed in');
   // User is not signed in, handle accordingly
   console.log('User is not signed in');
 }
